@@ -1,4 +1,8 @@
 body{
     background-color: #201424;
     color: white;
+};
+
+li {
+    list-style-type: none;
 }

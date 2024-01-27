@@ -1,4 +1,38 @@
 body{
-    background-color: #201424;
+    background-color: black;
     color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navColumn-item {
+    padding-bottom: 15px;
+}
+
+.navProfile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.navProfile-nameColumn_upper {
+    font-size: 16px;
+}
+.navProfile-nameColumn_lower {
+    font-size: 12px;
+    color: lightslategray
+}
+.navColumn-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.mainSection {
+    display: flex;
 }
