@@ -1,4 +1,88 @@
-body{
-    background-color: #201424;
+
+.FormRegistration{
+    text-align: center;
+}
+.FormRegistration_title{
+    padding-top: 25px;
+    color: #ddd;
+}
+.FormRegistration_Data_Button{
+    display: block;
+    position: relative;
+    left: 35%;
+    top: auto;
+    font-size: 30px;
+    background-color: #4CAF50;
     color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.FormRegistration_Data_Button:hover {
+    background-color: #45a049;
+}
+.FormRegistration_title-Form{
+    position: relative;
+    bottom: 22px;
+    border-radius: 9px;
+    height: 100px;
+    border-bottom: #202020 solid 5px;
+    background-color: #404040;
+}
+body{background-color: #101010;}
+.backround{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#FormRegistration_Data-Form{
+    font-size: 20px;
+}
+#FormRegistration_Data-Form_Input{
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+}
+.FormRegistration_Data_UserName{    
+    display: inline-block;
+    padding: 20px;  
+    padding-top: 15px;
+    padding-right: 0px;  
+}
+.FormRegistration_Data_Mail{    
+    display: inline-block;
+}
+.FormRegistration_Data_Information{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 40%;
+    text-align: right;
+}
+.FormRegistration_Data_Input{  
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: right;
+    text-align: left;
+}
+.FormAuthorization_Data_Password{
+    font-size: 20px;
+}
+.FormAuthorization_Data_UserName{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.FormRegistration_block{
+    background-color: white;
+    position: absolute;
+    left: 60vh;
+    top: 20vh;
+    width: 60vh;
+    height: 60vh;
+    border-bottom: 1px solid #202020;
+    border-radius: 10px;
 }

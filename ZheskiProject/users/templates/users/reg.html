@@ -1,13 +1,19 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'users/css/style.css' %}">
-</head>
-<body>
-    Mdam
-</body>
-</html>
+{% extends 'users/class.html' %}
+{% block title %} Регистрация {% endblock %}
+{% block titleForm %}
+<h1 class="FormRegistration_title">Регистрация</h1>
+{% endblock %}
+{% block FormRegistration_Data %}
+<div class="FormRegistration_Data_Information">
+<div class="FormRegistration_Data_UserName" id="FormRegistration_Data-Form">Имя Пользователя:</div> 
+<div class="FormRegistration_Data_Mail" id="FormRegistration_Data-Form">Эл. Почта:</div>
+<p class="FormRegistration_Data_Password" id="FormRegistration_Data-Form">Пароль:</p>
+<p class="FormRegistration_Data_Password-Replay" id="FormRegistration_Data-Form">Повтор пароля:</p>
+</div>
+<div class="FormRegistration_Data_Input">
+<input type="text" class="FormRegistration_Data_UserName_Input" id="FormRegistration_Data-Form_Input">
+<input type="text" class="FormRegistration_Data_Mail_Input" id="FormRegistration_Data-Form_Input">
+<input type="text" class="FormRegistration_Data_Password_Input" id="FormRegistration_Data-Form_Input">
+<input type="text" class="FormRegistration_Data_Password-Replay_Input" id="FormRegistration_Data-Form_Input">
+</div>
+{% endblock %}

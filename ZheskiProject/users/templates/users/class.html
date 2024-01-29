@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'users/css/style.css' %}">
+</head>
+
+<body>
+    <div class="FormRegistration">
+        <div class="FormRegistration_block">
+        <div class="FormRegistration_title-Form">
+            {% block titleForm %}
+            {% endblock %}
+        </div>
+            <div class="FormRegistration_Data">
+                {% block FormRegistration_Data %}
+                {% endblock %}
+                <input type="submit" class="FormRegistration_Data_Button">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

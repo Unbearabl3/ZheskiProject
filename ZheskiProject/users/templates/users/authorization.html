@@ -1,0 +1,15 @@
+{% extends 'users/class.html' %}
+{% block title %} Авторизация {% endblock %}
+{% block titleForm %}
+<h1 class="FormRegistration_title">Авторизация</h1>
+{% endblock %}
+{% block FormRegistration_Data %}
+<div class="FormRegistration_Data_Information">
+    <div class="FormAuthorization_Data_UserName" id="FormRegistration_Data-Form">Имя Пользователя:</div> 
+    <p class="FormAuthorization_Data_Password">Пароль:</p>
+    </div>
+    <div class="FormRegistration_Data_Input">
+    <input type="text" class="FormRegistration_Data_UserName_Input" id="FormRegistration_Data-Form_Input">
+    <input type="text" class="FormRegistration_Data_Password_Input" id="FormRegistration_Data-Form_Input">
+    </div>
+{% endblock %}
