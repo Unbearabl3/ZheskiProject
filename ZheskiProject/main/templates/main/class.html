@@ -10,7 +10,7 @@
 <body>
     <div class="mainSection">
         <div class="nav">
-            <a href="#" class="nav-title"><img src="" alt="#">Место для лого</a>
+            <a class="nav_title" href="#" >Twitter</a>
             <ul class="navColumn">
                 <li class="navColumn-item"><a href="">News</a></li>
                 <li class="navColumn-item"><a href="">Explorer</a></li>
@@ -19,6 +19,7 @@
                 <li class="navColumn-item"><a href="">Settings</a></li>
                 <li class="navColumn-item"><a href="">Profile</a></li>
                 <li class="navColumn-item"><a href="">More</a></li>
+                <li class="navColumn-item"><button class="createPostButton">+</li>
             </ul>
             <div class="navProfile">
                 <img class="navProfile-img" src="" alt="#">
@@ -29,10 +30,11 @@
                 <button class="navProfile-button">&#8230;</button>
 
             </div>
+            <div class="rightBlock"></div>
         </div>
         {% block body %}
         {% endblock %}
-        <div class="rightBlock"></div>
+        
     </div>
 </body>
 </html>
