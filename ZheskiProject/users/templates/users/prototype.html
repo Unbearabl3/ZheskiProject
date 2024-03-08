@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<link rel="stylesheet" href="{% static 'users/css/prototype.css' %}">
+<script src="{% static 'users/js/prototype.js'%}"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="panelForActions">
+        <div><h1>Название</h1></div>
+        <div><h2>Описание</h2></div>
+        <button class="panelButton" id="loginButton" onclick="toggleModal('loginModal')">Войти</button>
+        <button class="panelButton" id="registerButton" onclick="toggleModal('registerModal')">Зарегистрироваться</button>
+        
+        <div id="loginModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="toggleModal('loginModal')">&times;</span>
+            <h2 class="namePanel">Авторизация</h2>
+            <form action="#" method="post">
+                <div class="FormRegistration_Data_Information">
+                    <div class="FormAuthorization_Data_UserName" id="FormRegistration_Data-Form">Имя Пользователя:</div> 
+                    <p class="FormAuthorization_Data_Password">Пароль:</p>
+                    </div>
+                    <div class="FormRegistration_Data_Input">
+                    <input type="text" class="FormAuthorization_Data_UserName_Input" id="FormAuthorization_Data-Form_Input">
+                    <input type="text" class="FormAuthorization_Data_Password_Input" id="FormAuthorization_Data-Form_Input">
+                    </div>
+                    <input type="submit" class="FormAuthorization_Data_Button">
+                    <div class="FormAuthorization_Data_Account_True"><a href="#" onclick="toggleModal('loginModal'); toggleModal('registerModal')">Нет аккаунта?</a></div>
+            </form>
+          </div>
+        </div>
+        
+        <div id="registerModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="toggleModal('registerModal')">&times;</span>
+            <h2 class="namePanel">Регистрация</h2>
+            <form action="#" method="post">
+                <div class="FormRegistration_Data_Information">
+                    <div class="FormRegistration_Data_UserName" id="FormRegistration_Data-Form">Имя Пользователя:</div> 
+                    <div class="FormRegistration_Data_Mail" id="FormRegistration_Data-Form">Эл. Почта:</div>
+                    <p class="FormRegistration_Data_Password" id="FormRegistration_Data-Form">Пароль:</p>
+                    <p class="FormRegistration_Data_Password-Replay" id="FormRegistration_Data-Form">Повтор пароля:</p>
+                    </div>
+                    <div class="FormRegistration_Data_Input">
+                    <input type="text" class="FormRegistration_Data_UserName_Input" >
+                    <input type="text" class="FormRegistration_Data_Mail_Input" id="FormRegistration_Data-Form_Input">
+                    <input type="text" class="FormRegistration_Data_Password_Input" id="FormRegistration_Data-Form_Input">
+                    <input type="text" class="FormRegistration_Data_Password-Replay_Input" id="FormRegistration_Data-Form_Input">
+                    </div>
+                    <input type="submit" class="FormRegistration_Data_Button">
+                    <div class="FormRegistration_Data_Account_True"><a href="#" onclick="toggleModal('registerModal'); toggleModal('loginModal')">Есть аккаунт?</a></div>
+            </form>
+          </div>
+        </div>
+        
+</div>
+</body>
+</html>

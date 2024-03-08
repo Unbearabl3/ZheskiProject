@@ -21,11 +21,15 @@ from django.conf.urls.static import static
 
 from users.views import reg
 from users.views import authorization
+from users.views import loginMain
+from users.views import prototype
 from main.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('reg/', reg, name='reg'),
     path('auth/', authorization, name='authorization'),
+    path('loginMain', loginMain, name='usersMain'),
+    path('prototype/', prototype, name='prototype'),
     path('', index, name='index'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
