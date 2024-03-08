@@ -36,3 +36,23 @@ li {
 .mainSection {
     display: flex;
 }
+.createPostButton {
+    padding: 2px 20px;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 50px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    cursor: pointer;
+}
+.nav_title {
+    color: rebeccapurple;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white; 
+    padding-left: 20px;
+}
