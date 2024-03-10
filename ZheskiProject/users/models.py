@@ -1,14 +1,11 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
+from django.utils import timezone
 
 
-class Users(models.Model):
-    UserName = models.CharField('Username', max_length=32)
-    Password = models.CharField('Password', max_length=32)
-    Email = models.EmailField('Email')
+class User(AbstractUser):
+    image = models.ImageField(upload_to='users_images', null=True, blank=True)
+    # UserName = models.CharField('UserName', max_length=32)
+    # Password = models.CharField('Password', max_length=32)
+    # Email = models.EmailField('Email')
 
-    def __str__(self):
-        return self.UserName
-    
-    class Meta:
-        verbose_name = 'user'
-        verbose_name_plural = 'users'
