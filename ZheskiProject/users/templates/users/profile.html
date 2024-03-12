@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hif
+    <form action="{% url 'users:profile' %}" method="post">
+        {% csrf_token %}
+        {{ form.img }}
+        {{ form.username }}
+        {{ form.email }}
+        <input type="submit" value="Сделать">
+    </form>
+</body>
+</html>

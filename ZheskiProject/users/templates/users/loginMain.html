@@ -27,8 +27,11 @@
             <form action="{% url 'users:loginMain'%}" method="post">
               {% csrf_token %}
                 <div class="FormRegistration_Data_Information">
-                    </div>
+                </div>
                     <div class="FormRegistration_Data_Input">
+                      {% if error_message %}
+                      <div class="error-message">{{ error_message }}</div>
+                      {% endif %}
                     {{ form.username}}
                     {{ form.password }}
                     </div>

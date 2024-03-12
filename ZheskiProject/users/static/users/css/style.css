@@ -84,7 +84,6 @@ body{
     position: relative;
     height: 100%;
     width: 40%;
-    text-align: right;
 }
 .FormRegistration_Data_Input{  
     position: relative;
@@ -120,4 +119,8 @@ a{
     left: 10px;
     margin: 15px;
     
+}
+
+.error-message{
+    position: relative; right: 50px; text-align: center; color: red;
 }
