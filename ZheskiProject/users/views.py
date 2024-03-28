@@ -16,7 +16,7 @@ def loginMain(request):
         form = UserLoginForm(data=request.POST)
         if formReg.is_valid():
             formReg.save()
-            return HttpResponseRedirect(reverse('users:loginMain'))
+            return HttpResponseRedirect(reverse('users:profile'))
         if form.is_valid():
             username = request.POST['username']
             password = request.POST['password']
